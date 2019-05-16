@@ -57,3 +57,172 @@ html, body {
     height: 100%;
 }
 
+
+//Variables
+@color:#D3D3D3;
+@size:30px;
+
+//Mixin
+.position(){
+	font-size:size;
+	padding-bottom: 15px;
+}
+
+.center-column(){
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.container {
+    display:flex;
+	flex-direction: column;
+	align-items: center;
+	width: 70%;
+    margin: 0 auto;    
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-bottom:30px;
+	border-radius:20px;
+	@media (max-width:500px) {
+		.container {  
+		  width: 100%; 
+		 }
+}
+
+header {
+	nav a{
+    padding:30px;
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+	}
+	@media (max-width:500px) {
+   
+		nav{
+			.center-column;
+			}
+		nav a{
+			border-top: 1px solid color;
+			}
+		nav :last-child{
+			border-bottom: 1px solid color;
+			}
+		}
+}
+
+.sectionone{
+    display:flex;
+    flex-direction: row;    
+    align-items: center;
+    padding:30px;
+	width: 100%;
+	
+	h1{
+		.position;
+	}
+	img {
+		height: 70%; 
+		width: 40%; 
+	
+	}
+	.one{    
+		width: 100%;
+	}
+	
+	p{
+		padding-top: 5px;
+		font-size: 20px;
+	}
+	@media (max-width:500px) {
+		  display:flex;
+          text-align: center;
+          width:100%;
+          margin-right:5%;
+		img{
+			display:none;
+		  }
+	}
+}
+
+.sectiontwo {
+    display:flex;    
+	width:100%;   
+	
+	h1 {
+		.position;
+	}
+	@media (max-width:500px) {
+		.center-column;
+		align-items: center;
+		text-align: center;
+		
+		div{
+			width:50%;
+		}
+		.list{
+			margin-left:50px;
+		}
+		p{
+			text-align: center;
+		}
+	}
+}
+.sum {
+    width:50%;
+    margin-left: 50px;
+	margin-right:70px;    
+	
+	p{
+		padding: 8px;
+		border:1px solid color;
+	}
+}
+
+
+.list p{
+    padding:8px;
+
+    border:1px solid color;
+    }
+
+.history {
+    .center-column;
+	font-size:size;
+	padding-bottom: 15px;
+	padding-top:5px;
+}
+
+.stuff{
+    display:flex;  
+    border:1px solid color;
+    padding-left:15px;
+	padding-right:15px;
+	padding-top:10px;
+
+	p{
+		align-content: space-between;   
+		padding-right:60px;
+		padding-top:15px;
+		padding-bottom:8px;
+	}
+	h2 {
+		text-decoration: underline;
+	}
+	@media (max-width:500px) {
+		.stuff p{
+			font-size:12px;
+		}
+		.stuff h2 {
+			font-size:15px;
+		}
+	}
+    
+}
+
+footer{
+    position:center;
+    margin-top:30px; 
+    
+}
+
